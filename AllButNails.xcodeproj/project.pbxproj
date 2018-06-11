@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FF96062B20CE27C100449955 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF96062A20CE27C100449955 /* AppDelegate.swift */; };
-		FF96062D20CE27C100449955 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF96062C20CE27C100449955 /* ViewController.swift */; };
+		FF96062D20CE27C100449955 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF96062C20CE27C100449955 /* LoginViewController.swift */; };
 		FF96063020CE27C100449955 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF96062E20CE27C100449955 /* Main.storyboard */; };
 		FF96063220CE27C300449955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF96063120CE27C300449955 /* Assets.xcassets */; };
 		FF96063520CE27C300449955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF96063320CE27C300449955 /* LaunchScreen.storyboard */; };
@@ -64,7 +64,7 @@
 /* Begin PBXFileReference section */
 		FF96062720CE27C100449955 /* AllButNails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllButNails.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF96062A20CE27C100449955 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF96062C20CE27C100449955 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF96062C20CE27C100449955 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FF96062F20CE27C100449955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF96063120CE27C300449955 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF96063420CE27C300449955 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -117,7 +117,9 @@
 		FF96062920CE27C100449955 /* AllButNails */ = {
 			isa = PBXGroup;
 			children = (
-				FF96067120CE2BF000449955 /* Views */,
+				FF96068920CE331C00449955 /* Model Controllers */,
+				FF96068820CE32F400449955 /* Models */,
+				FF96067120CE2BF000449955 /* View Controllers */,
 				FF96062A20CE27C100449955 /* AppDelegate.swift */,
 				FF96062E20CE27C100449955 /* Main.storyboard */,
 				FF96063120CE27C300449955 /* Assets.xcassets */,
@@ -143,12 +145,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FF96067120CE2BF000449955 /* Views */ = {
+		FF96067120CE2BF000449955 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FF96062C20CE27C100449955 /* ViewController.swift */,
+				FF96062C20CE27C100449955 /* LoginViewController.swift */,
 			);
-			path = Views;
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		FF96067520CE2D5500449955 /* External */ = {
@@ -168,6 +170,20 @@
 				FF96068420CE2D7A00449955 /* OAuth2Tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FF96068820CE32F400449955 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF96068920CE331C00449955 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF96062D20CE27C100449955 /* ViewController.swift in Sources */,
+				FF96062D20CE27C100449955 /* LoginViewController.swift in Sources */,
 				FF96062B20CE27C100449955 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
