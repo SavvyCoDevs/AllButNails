@@ -13,6 +13,7 @@
 		FF96063220CE27C300449955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF96063120CE27C300449955 /* Assets.xcassets */; };
 		FF96063520CE27C300449955 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF96063320CE27C300449955 /* LaunchScreen.storyboard */; };
 		FF96064020CE27C300449955 /* AllButNailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF96063F20CE27C300449955 /* AllButNailsTests.swift */; };
+		FF96068720CE2D9600449955 /* OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF96068020CE2D7A00449955 /* OAuth2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +23,41 @@
 			proxyType = 1;
 			remoteGlobalIDString = FF96062620CE27C100449955;
 			remoteInfo = AllButNails;
+		};
+		FF96067D20CE2D7A00449955 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF96067620CE2D7A00449955 /* OAuth2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEE209471942772800736F1A;
+			remoteInfo = OAuth2macOS;
+		};
+		FF96067F20CE2D7A00449955 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF96067620CE2D7A00449955 /* OAuth2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEDB8624193FAAE500C4EEA1;
+			remoteInfo = OAuth2iOS;
+		};
+		FF96068120CE2D7A00449955 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF96067620CE2D7A00449955 /* OAuth2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 659854461C5B3BEA00237D39;
+			remoteInfo = OAuth2tvOS;
+		};
+		FF96068320CE2D7A00449955 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF96067620CE2D7A00449955 /* OAuth2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEE209A219427DFE00736F1A;
+			remoteInfo = OAuth2Tests;
+		};
+		FF96068520CE2D8F00449955 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF96067620CE2D7A00449955 /* OAuth2.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEDB8623193FAAE500C4EEA1;
+			remoteInfo = OAuth2iOS;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -36,6 +72,7 @@
 		FF96063B20CE27C300449955 /* AllButNailsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllButNailsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF96063F20CE27C300449955 /* AllButNailsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllButNailsTests.swift; sourceTree = "<group>"; };
 		FF96064120CE27C300449955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF96067620CE2D7A00449955 /* OAuth2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OAuth2.xcodeproj; path = ../../Externals/OAuth2/OAuth2.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF96068720CE2D9600449955 /* OAuth2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +97,11 @@
 		FF96061E20CE27C000449955 = {
 			isa = PBXGroup;
 			children = (
+				FF96067520CE2D5500449955 /* External */,
 				FF96062920CE27C100449955 /* AllButNails */,
 				FF96063E20CE27C300449955 /* AllButNailsTests */,
 				FF96062820CE27C100449955 /* Products */,
+				FF96065C20CE28B800449955 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +117,8 @@
 		FF96062920CE27C100449955 /* AllButNails */ = {
 			isa = PBXGroup;
 			children = (
+				FF96067120CE2BF000449955 /* Views */,
 				FF96062A20CE27C100449955 /* AppDelegate.swift */,
-				FF96062C20CE27C100449955 /* ViewController.swift */,
 				FF96062E20CE27C100449955 /* Main.storyboard */,
 				FF96063120CE27C300449955 /* Assets.xcassets */,
 				FF96063320CE27C300449955 /* LaunchScreen.storyboard */,
@@ -96,6 +136,40 @@
 			path = AllButNailsTests;
 			sourceTree = "<group>";
 		};
+		FF96065C20CE28B800449955 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF96067120CE2BF000449955 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF96062C20CE27C100449955 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF96067520CE2D5500449955 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				FF96067620CE2D7A00449955 /* OAuth2.xcodeproj */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		FF96067720CE2D7A00449955 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF96067E20CE2D7A00449955 /* OAuth2.framework */,
+				FF96068020CE2D7A00449955 /* OAuth2.framework */,
+				FF96068220CE2D7A00449955 /* OAuth2.framework */,
+				FF96068420CE2D7A00449955 /* OAuth2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,6 +184,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				FF96068620CE2D8F00449955 /* PBXTargetDependency */,
 			);
 			name = AllButNails;
 			productName = AllButNails;
@@ -164,6 +239,12 @@
 			mainGroup = FF96061E20CE27C000449955;
 			productRefGroup = FF96062820CE27C100449955 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FF96067720CE2D7A00449955 /* Products */;
+					ProjectRef = FF96067620CE2D7A00449955 /* OAuth2.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FF96062620CE27C100449955 /* AllButNails */,
@@ -171,6 +252,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FF96067E20CE2D7A00449955 /* OAuth2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuth2.framework;
+			remoteRef = FF96067D20CE2D7A00449955 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF96068020CE2D7A00449955 /* OAuth2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuth2.framework;
+			remoteRef = FF96067F20CE2D7A00449955 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF96068220CE2D7A00449955 /* OAuth2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OAuth2.framework;
+			remoteRef = FF96068120CE2D7A00449955 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF96068420CE2D7A00449955 /* OAuth2Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OAuth2Tests.xctest;
+			remoteRef = FF96068320CE2D7A00449955 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FF96062520CE27C100449955 /* Resources */ = {
@@ -217,6 +329,11 @@
 			isa = PBXTargetDependency;
 			target = FF96062620CE27C100449955 /* AllButNails */;
 			targetProxy = FF96063C20CE27C300449955 /* PBXContainerItemProxy */;
+		};
+		FF96068620CE2D8F00449955 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuth2iOS;
+			targetProxy = FF96068520CE2D8F00449955 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
